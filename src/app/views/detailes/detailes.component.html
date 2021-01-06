@@ -1,0 +1,303 @@
+
+<div class="m-3 ml-5 mr-5">
+  <div class="row ">
+      <span class="form-control text-center"><b>Section 1. Employee Information and Attestation</b></span>
+  </div>
+  <div class="row card margin-top">
+    <h5 class="card-header bg-color">Personal Information</h5>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-4">
+          <label>First Name</label>
+          <span class="form-control">{{employeeObj.firstName}}</span>
+          <!-- <input type="text" [(ngModel)]="employeeObj.firstName" class="form-control"/> -->
+        
+        </div>
+        <div class="form-group col-4">
+          <label>Middle Name</label>
+          <span class="form-control">{{employeeObj.middleName}}</span>
+        </div>
+        <div class="form-group col-4">
+          <label>Last Name</label>
+          <span class="form-control">{{employeeObj.lastName}}</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-5">
+          <label>Address</label>
+          <span class="form-control">{{employeeObj.address}}</span>
+        </div>
+        <div class="form-group col-2">
+          <label>City</label>
+          <span class="form-control">{{employeeObj.city}}</span>
+        </div>
+        <div class="form-group col-3">
+          <label>State</label>
+          <span class="form-control">{{employeeObj.state}}</span>
+        </div>
+        <div class="form-group col-2">
+          <label>ZIP Code</label>
+          <span class="form-control">{{employeeObj.zip}}</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-2">
+          <label>Date Of Birth</label>
+          <span class="form-control">{{employeeObj.dob}}</span>
+        </div>
+        <div class="form-group col-4">
+          <label>Email</label>
+          <span class="form-control">{{employeeObj.email}}</span>
+        </div>
+        <div class="form-group col-3">
+          <label>Telephone No.</label>
+          <span class="form-control">{{employeeObj.telephoneNo}}</span>
+        </div>
+        <div class="form-group col-3">
+          <label>Security Code</label>
+          <span class="form-control">{{employeeObj.securityCode}}</span>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<div class="m-3 ml-5 mr-5">
+  <div class="row ">
+      <span class="form-control text-center"><b>Section 2. Employer or Authorized Representation Review</b></span>
+  </div>
+  <div class="row card margin-top">
+    <h5 class="card-header bg-color">Employee Info from Section 1.</h5>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-4">
+          <label>First Name</label>
+          <span class="form-control">{{employerObj.firstName}}</span>
+        </div>
+        <div class="form-group col-4">
+          <label>Middle Name</label>
+          <span class="form-control">{{employerObj.middleName}}</span>
+        </div>
+        <div class="form-group col-4">
+          <label>Last Name</label>
+          <span class="form-control">{{employerObj.lastName}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="row card margin-top">
+        <div class="card">
+          <h5 class="card-header bg-color">Identity and Empoyment Authorization</h5>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Title</label>
+                <span class="form-control">{{employerObj.identityTitle}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Issuing AUthority</label>
+                <span class="form-control">{{employerObj.identityIssuing}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Number</label>
+                <span class="form-control">{{employerObj.identityNumber}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Expiration Date (mm/dd/yyyy)</label>
+                <span class="form-control">{{employerObj.identityExpDate}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row card margin-top">
+        <div class="card">
+          <!-- <h5 class="card-header bg-color">Identity and Empoyment Authorization</h5> -->
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Title</label>
+                <span class="form-control">{{employerObj.employTitle}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Issuing AUthority</label>
+                <span class="form-control">{{employerObj.employIssuing}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Number</label>
+                <span class="form-control">{{employerObj.employNumber}}</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Expiration Date (mm/dd/yyyy)</label>
+                <span class="form-control">{{employerObj.employExpDate}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Identity</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Title</label>
+                    <span class="form-control">{{employerObj.idnTitle}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Issuing AUthority</label>
+                    <span class="form-control">{{employerObj.idnIssuing}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Number</label>
+                    <span class="form-control">{{employerObj.idnNumber}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Expiration Date (mm/dd/yyyy)</label>
+                    <span class="form-control">{{employerObj.idnExpDate}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Empoyment Authorization</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Title</label>
+                    <span class="form-control">{{employerObj.empTitle}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Issuing AUthority</label>
+                    <span class="form-control">{{employerObj.empIssuing}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Number</label>
+                    <span class="form-control">{{employerObj.empNumber}}</span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Expiration Date (mm/dd/yyyy)</label>
+                    <span class="form-control">{{employerObj.empExpDate}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Additional Information</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Addition Info.</label>
+                    <textarea class="form-control" [(ngModel)]="employerObj.firstName" id="exampleFormControlTextarea1"
+                      rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">QR Code-Section</h5>
+              <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                      <label>QR Code.</label>
+                      <textarea class="form-control" [(ngModel)]="employerObj.qacode" id="exampleFormControlTextarea1"
+                        rows="10"></textarea>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row card margin-top">
+    <div class="card">
+      <h5 class="card-header bg-color">Joining Form</h5>
+      <div class="card-body">
+        <div class="data-row">
+          <span class="col-6 text-center"><b>The employee's first day of employment(mm/dd/yyyy):</b></span>
+          <span class="form-control">{{employerObj.joiningDate}}</span>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <label class="font-size">Title of Employer of Authorized Representative</label>
+            <span class="form-control">{{employerObj.empfirstName}}</span>
+          </div>
+          <div class="form-group col-4">
+            <label class="font-size">First Name of Employer of Authorized Representative</label>
+            <span class="form-control">{{employerObj.empmiddleName}}</span>
+          </div>
+          <div class="form-group col-4">
+            <label class="font-size">Last Name of Employer of Authorized Representative</label>
+            <span class="form-control">{{employerObj.emplastName}}</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-4">
+            <label class="font-size">Employer's Business or Organization Address</label>
+            <span class="form-control">{{employerObj.employerAdd}}</span>
+          </div>
+          <div class="form-group col-3">
+            <label class="font-size">City Of Town</label>
+            <span class="form-control">{{employerObj.city}}</span>
+          </div>
+          <div class="form-group col-3">
+            <label class="font-size">State</label>
+            <span class="form-control">{{employerObj.state}}</span>
+          </div>
+          <div class="form-group col-2">
+            <label class="font-size">Zip Code</label>
+            <span class="form-control">{{employerObj.zipcode}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,244 @@
+<div class="m-3 ml-5 mr-5">
+  <div class="row card margin-top">
+    <div class="col-12">
+      <span class="text-center"><b>Section 2. Employer or Authorized Representation Review</b></span>
+      <button class="btn btn-primary m-1 mr-1 float-right" (click)='saveAndNext()'>Save & Next</button>
+      <button class="btn btn-primary m-1 mr-1 float-right" (click)='Reset()'>Reset</button>
+      <button class="btn btn-primary m-1 mr-1 float-right" [routerLink]="'/employee'">Previous</button>
+    </div>
+  </div>
+  <div class="row card margin-top">
+    <h5 class="card-header bg-color">Employee Info from Section 1.</h5>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-4">
+          <label>First Name</label>
+          <input type="text" [(ngModel)]="employerObj.firstName" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+          <label>Middle Name</label>
+          <input type="text" [(ngModel)]="employerObj.middleName" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+          <label>Last Name</label>
+          <input type="text" [(ngModel)]="employerObj.lastName" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="row card margin-top">
+        <div class="card">
+          <h5 class="card-header bg-color">Identity and Empoyment Authorization</h5>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Title</label>
+                <input type="text" [(ngModel)]="employerObj.identityTitle" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Issuing AUthority</label>
+                <input type="text" [(ngModel)]="employerObj.identityIssuing" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Number</label>
+                <input type="text" [(ngModel)]="employerObj.identityNumber" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Expiration Date (mm/dd/yyyy)</label>
+                <input type="text" [(ngModel)]="employerObj.identityExpDate" class="form-control"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row card margin-top">
+        <div class="card">
+          <!-- <h5 class="card-header bg-color">Identity and Empoyment Authorization</h5> -->
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Title</label>
+                <input type="text" [(ngModel)]="employerObj.employTitle" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Issuing AUthority</label>
+                <input type="text" [(ngModel)]="employerObj.employIssuing" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Document Number</label>
+                <input type="text" [(ngModel)]="employerObj.employNumber" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label>Expiration Date (mm/dd/yyyy)</label>
+                <input type="text" [(ngModel)]="employerObj.employExpDate" class="form-control"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Identity</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Title</label>
+                    <input type="text" [(ngModel)]="employerObj.idnTitle" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Issuing AUthority</label>
+                    <input type="text" [(ngModel)]="employerObj.idnIssuing" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Number</label>
+                    <input type="text" [(ngModel)]="employerObj.idnNumber" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Expiration Date (mm/dd/yyyy)</label>
+                    <input type="text" [(ngModel)]="employerObj.idnExpDate" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Empoyment Authorization</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Title</label>
+                    <input type="text" [(ngModel)]="employerObj.empTitle" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Issuing AUthority</label>
+                    <input type="text" [(ngModel)]="employerObj.empIssuing" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Document Number</label>
+                    <input type="text" [(ngModel)]="employerObj.empNumber" class="form-control"/>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Expiration Date (mm/dd/yyyy)</label>
+                    <input type="text" [(ngModel)]="employerObj.empExpDate" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">Additional Information</h5>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Addition Info.</label>
+                    <textarea class="form-control" [(ngModel)]="employerObj.firstName" id="exampleFormControlTextarea1"
+                      rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row card margin-top">
+            <div class="card">
+              <h5 class="card-header bg-color">QR Code-Section</h5>
+              <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                      <label>QR Code.</label>
+                      <textarea class="form-control" [(ngModel)]="employerObj.qacode" id="exampleFormControlTextarea1"
+                        rows="10"></textarea>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row card margin-top">
+      <div class="card">
+        <h5 class="card-header bg-color">Joining Form</h5>
+        <div class="card-body">
+          <div class="data-row">
+            <span class="col-6 text-center"><b>The employee's first day of employment(mm/dd/yyyy):</b></span>
+            <input class="col-6" type="text" [(ngModel)]="employerObj.joiningDate">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-4">
+              <label class="font-size">Title of Employer of Authorized Representative</label>
+              <input type="text" [(ngModel)]="employerObj.empfirstName" class="form-control" />
+            </div>
+            <div class="form-group col-4">
+              <label class="font-size">First Name of Employer of Authorized Representative</label>
+              <input type="text" [(ngModel)]="employerObj.empmiddleName" class="form-control"/>
+            </div>
+            <div class="form-group col-4">
+              <label class="font-size">Last Name of Employer of Authorized Representative</label>
+              <input type="text" [(ngModel)]="employerObj.emplastName" class="form-control"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-4">
+              <label class="font-size">Employer's Business or Organization Address</label>
+              <input type="text" [(ngModel)]="employerObj.employerAdd" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+              <label class="font-size">City Of Town</label>
+              <input type="text" [(ngModel)]="employerObj.city" class="form-control"/>
+            </div>
+            <div class="form-group col-3">
+              <label class="font-size">State</label>
+              <input type="text" [(ngModel)]="employerObj.state" class="form-control"/>
+            </div>
+            <div class="form-group col-2">
+              <label class="font-size">Zip Code</label>
+              <input type="text" [(ngModel)]="employerObj.zipcode" class="form-control"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
